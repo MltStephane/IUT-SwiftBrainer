@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.8.0)
+  - PromiseKit (6.11.0):
+    - PromiseKit/CorePromise (= 6.11.0)
+    - PromiseKit/Foundation (= 6.11.0)
+    - PromiseKit/UIKit (= 6.11.0)
+  - PromiseKit/CorePromise (6.11.0)
+  - PromiseKit/Foundation (6.11.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.11.0):
+    - PromiseKit/CorePromise
+  - SwiftGifOrigin (1.7.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8)
+  - PromiseKit
+  - SwiftGifOrigin (~> 1.7.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - PromiseKit
+    - SwiftGifOrigin
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+
+PODFILE CHECKSUM: 59f9659e996f0697190ab970cc93654f38c28a25
+
+COCOAPODS: 1.7.5
