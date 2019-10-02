@@ -23,7 +23,7 @@ public class Char {
     var damageBonus: Int
     var hitChance: Int
     
-    init(username: String, gender: String, difficulty: String = "medium", healthPoint: Int = 100, damage: Int = 15, damageBonus: Int = 0, hitChance: Int = 80) {
+    init(username: String, gender: String, difficulty: String = "easy", healthPoint: Int = 100, damage: Int = 15, damageBonus: Int = 0, hitChance: Int = 80) {
         self.username = username
         self.gender = gender
         self.difficulty = difficulty
@@ -44,7 +44,7 @@ public class Char {
             for char in chars {
                 listCharacters.append(
                     Char(username: char.username ?? "", gender: char.gender ?? "", difficulty: char.difficulty ?? "", healthPoint: 100, damage: 15, damageBonus: 0)
-                )  
+                )
             }
             
         } catch {
@@ -52,6 +52,28 @@ public class Char {
         }
         
         return listCharacters
+    }
+    
+    func getGender() -> Int {
+        switch "\(self.gender)" {
+        case "male":
+            return 0
+        case "female":
+            return 1
+        default:
+            return 2
+        }
+    }
+    
+    func getDifficulty() -> Int {
+        switch "\(self.difficulty)" {
+        case "easy":
+            return 0
+        case "medium":
+            return 1
+        default:
+            return 2
+        }
     }
 }
 
